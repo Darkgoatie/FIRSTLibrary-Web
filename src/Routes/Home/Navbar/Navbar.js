@@ -26,9 +26,6 @@ const Navbar = () => {
             >
               Resources
             </a>
-            <a className="underlineOnHover nav-item nav-link" href="/#projects">
-              Other Projects
-            </a>
             <a
               className="underlineOnHover nav-item nav-link"
               href="/#managedby"

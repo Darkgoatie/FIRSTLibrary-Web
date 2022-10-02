@@ -1,5 +1,6 @@
 const { render } = require("react-dom");
 import "./global.css";
+import "./footer.css";
 import {
   BrowserRouter as Router,
   Switch as Routes,
@@ -9,6 +10,8 @@ import {
 import Hello from "./Routes/Home/Hello/Hello";
 import Navbar from "./Routes/Home/Navbar/Navbar";
 import About from "./Routes/Home/About/About";
+import Resources from "./Routes/Home/Resources/Resources";
+import ManagedBy from "./Routes/Home/ManagedBy/ManagedBy";
 
 render(
   <Router>
@@ -17,6 +20,8 @@ render(
         <Navbar />
         <Hello />
         <About />
+        <Resources />
+        <ManagedBy />
       </Route>
       <Route>
         <meta http-equiv="refresh" content="0;URL='/'" />
