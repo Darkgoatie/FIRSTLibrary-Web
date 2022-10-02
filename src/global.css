@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL@200&display=swap');
+
+#root {
+  font-family: "Abyssinica SIL";
+}
+
+.underlineOnHover {
+  display: inline-block;
+  position: relative;
+}
+
+.underlineOnHover::after {  
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e4a204;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underlineOnHover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  scroll-behavior: smooth;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+@media(min-width: 578px) {
+  .sectionImage {
+    width: 25vw
+  }
+}
+
+@media(max-width: 577px) {
+  .display-4 {
+    display: block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .sectionImage {
+    height: 40vh;
+  }
+}
+
+.sectionImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+}
+
+.dark {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.lead, .display-4 {
+  text-align: center;
+  margin-left: min(10vw);
+  margin-right: min(10vw);
+}
