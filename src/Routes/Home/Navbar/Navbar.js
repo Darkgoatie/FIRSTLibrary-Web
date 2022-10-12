@@ -17,20 +17,20 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbar">
           <div className="navbar-nav">
+            <a className="underlineOnHover nav-item nav-link" href="/">
+              Home
+            </a>
             <a className="underlineOnHover nav-item nav-link" href="/#about">
               About
-            </a>
-            <a
-              className="underlineOnHover nav-item nav-link"
-              href="/#resources"
-            >
-              Resources
             </a>
             <a
               className="underlineOnHover nav-item nav-link"
               href="/#managedby"
             >
               Managed by
+            </a>
+            <a className="underlineOnHover nav-item nav-link" href="/downloads">
+              Resources & Downloads
             </a>
           </div>
         </div>

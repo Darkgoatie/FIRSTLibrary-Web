@@ -37,6 +37,16 @@
   scroll-snap-type: y mandatory;
 }
 
+.lightdark {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.dark {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
 @media(min-width: 578px) {
   .sectionImage {
     width: 25vw
@@ -61,10 +71,6 @@
   margin-top: 1vh;
 }
 
-.dark {
-  background-color: rgb(31, 31, 31);
-  color: white;
-}
 
 .lead, .display-4, .display-5 {
   text-align: center;

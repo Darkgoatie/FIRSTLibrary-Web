@@ -1,0 +1,84 @@
+.downloadsSection {
+  background-color: #111111;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 10vh;
+  padding-top: 20vh;
+}
+
+@media only screen 
+and (min-device-width: 600px) {
+.resourcesListElement {
+  height: 10vh;
+  display: flex;
+  margin: 5vh;
+  border: solid black;
+  border-radius: 0.5vw;
+
+}
+
+.resourcesListElement * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.resourcesListElement .itemButtons a {
+  margin-right: min(1.2vw);
+}
+
+.resourcesListElement .itemName {
+  margin-left: 1vw;
+}
+
+.resourcesListElement .itemButtons {
+  float: right;
+  margin-left: auto;
+}
+}
+
+@media only screen 
+and (max-device-width: 600px) {
+.resourcesListElement {
+  height: 15vh;
+  display: flex;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  border: solid black;
+  border-radius: 2.5vw;
+}
+
+.resourcesListElement * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.resourcesListElement .itemButtons a {
+  margin-right: min(3vw);
+}
+
+.resourcesListElement .itemName {
+  margin-left: 3vw;
+  max-width: 63vw;
+}
+
+.resourcesListElement .itemButtons {
+  float: right; /* FLEXBOX ICERISINDE BU ISE YARAMIYOR :( */
+  margin-left: auto; /* FLOAT: RIGHT YERINE BUNU KULLAN ( EGER FLEXBOX ICINDEYSE ) */
+}
+}
+
+.downloadsSection h1 {
+  color: white;
+  padding-left: 5vw;
+}
+
+.resourcesListElement {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.resourcesListElement i {
+  color: white;
+  text-decoration: none;
+}
