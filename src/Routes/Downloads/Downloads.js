@@ -6,6 +6,10 @@ function getWindowSize() {
   return { innerWidth, innerHeight };
 }
 
+const fixResourceName = (resourceName) => {
+  return resourceName.split(" ").join("_");
+};
+
 const Downloads = () => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
@@ -27,10 +31,10 @@ const Downloads = () => {
     );
   }
 
-  const rList = require("./resourcesList.json");
+  const rList = require("../../resourcesList.json");
   const listElements = [];
 
-  if (windowSize.innerWidth > 600) {
+  if (windowSize.innerWidth > 800) {
     rList.forEach((file) => {
       listElements.push(
         <div className="resourcesListElement">
@@ -42,6 +46,12 @@ const Downloads = () => {
               href={`/resources/${file.name}`}
             >
               <i class="fa-solid fa-lg fa-download"></i>
+            </a>
+            <a
+              href={`/onlineviewer/:${fixResourceName(file.name)}`}
+              className="itemEye"
+            >
+              <i class="fa-solid fa-lg fa-eye"></i>
             </a>
             <a
               href="#footer"

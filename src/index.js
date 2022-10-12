@@ -13,23 +13,26 @@ import About from "./Routes/Home/About/About";
 import Resources from "./Routes/Home/Resources/Resources";
 import ManagedBy from "./Routes/Home/ManagedBy/ManagedBy";
 import Downloads from "./Routes/Downloads/Downloads";
+import ViewerPaths from "./Routes/OnlineViewer/ViewerPaths";
 
 render(
   <Router>
+    <Navbar />
     <Routes>
       <Route exact path="/">
-        <Navbar />
         <Hello />
         <About />
         <Resources />
         <ManagedBy />
       </Route>
       <Route exact path="/downloads">
-        <Navbar />
         <Downloads />
       </Route>
+      <Route path="/onlineviewer">
+        <ViewerPaths />
+      </Route>
       <Route>
-        <meta http-equiv="refresh" content="0;URL='/'" />
+        <meta httpEquiv="refresh" content="0;URL='/'" />
       </Route>
     </Routes>
   </Router>,
